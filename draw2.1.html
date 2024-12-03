@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Furniture shops">
+    <meta name="author" content="alaaalnatsha">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Kappani Furniture</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="./css/css.css">
+
+    <style>
+        body {
+            color: burlywood;
+            background-image: url(./img/wood.jpeg);
+            background-attachment: scroll;
+            background-size: cover;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .scroll-container {
+            display: flex;
+            justify-content: center;
+            padding: 45px;
+        }
+
+        .item {
+            max-width: 550px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow:auto;
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            display: flex;
+        }
+
+        .item h2 {
+            margin-top: 20px;
+            font-size: 1.89rem;
+            color: #6d4c41; 
+        }
+
+        .item p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #795548;
+            padding: 0 60px 40px;
+        }
+
+        footer {
+            margin-top: 3px;
+            background-color: rgba(0, 0, 0, 0.1);
+            color: burlywood;
+            padding: 1px 0;
+        }
+        .btn-custom {
+        display: inline-block;
+        padding: 20px 204px;
+        background-color: #6d4c41; 
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        border: none; 
+        border-radius: 5px;
+        cursor: pointer; 
+        transition: all 0.3s ease; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    }
+
+    .btn-custom:hover {
+        background-color: #f7cd8a; 
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.53); 
+        transform: translateY(-3px); 
+    }
+
+    .btn-custom:active {
+        background-color: #5d4037;
+        transform: translateY(1px);
+    }
+    </style>
+</head>
+<body style="color :burlywood;background-image:url(./img/wood2.jpeg);background-attachment: scroll;background-size:cover">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <!-- Navbar brand -->
+      <a class="navbar-brand" href="#">
+        <img src="./img/logo.png" height="70" width="80" alt="Logo" loading="lazy" />
+      </a>
+  
+      <!-- Collapsible content -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./facebook.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <a class="text-reset me-3" href="#">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
+        <a class="text-reset me-3" href="./instagram.html" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="text-reset me-3" href="./facebook.html" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <!-- Notifications -->
+        <div class="dropdown me-3">
+          <a class="text-reset dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <i class="fas fa-bell"></i>
+            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Some news</a></li>
+            <li><a class="dropdown-item" href="#">Another news</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+        <!-- Avatar -->
+        <div class="dropdown">
+          <a class="dropdown-toggle d-flex align-items-center hidden-arrow" href="#" id="navbarDropdownMenuAvatar" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp" class="rounded-circle" height="25" alt="Avatar" loading="lazy" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+            <li><a class="dropdown-item" href="#">My profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </nav>
+
+  <div class="scroll-container">
+    <div class="item">
+        <img src="./img/draw2.1.jpg" alt="Chair">
+       
+        </p>
+      <a href="./draw2.html"> <button class="btn-custom">BACK</button></a> 
+    </div>
+</div>
+
+
+    <footer class="text-center bg-body-tertiary">
+      <!-- Grid container -->
+      <div class="container pt-4">
+        <!-- Section: Social media -->
+        <section class="mb-4"style="color: #f5d8a9;">
+          <!-- Facebook -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+    
+          <!-- Twitter -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+    
+          <!-- Google -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-google"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+          ></a>
+    
+          <!-- Linkedin -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Github -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-floating btn-lg text-body m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2020 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer> 
+  
+
+</body>
+</html>

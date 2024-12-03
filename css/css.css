@@ -1,0 +1,154 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding:0;
+    background-color: #f5d8a9;
+}
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #b7aca7;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out; /* ناعمة */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b47f59;  
+    font-size: 20px;
+    letter-spacing: 1px; 
+}
+
+.navbar-nav .nav-link.active {
+    color: #a4765e;
+    font-size: 25px;
+    font-family: 'Noto Serif', serif;
+}
+
+
+.navbar {
+    animation: fadeIn 1s ease-in-out; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.scroll-content {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+    margin: 20px; 
+    padding: 10px; 
+}
+
+.scroll-content::-webkit-scrollbar {
+    display: none; 
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+.item {
+    margin: 0 1px; /* Adds spacing between items */
+    flex-shrink: 399px; /* Prevents items from shrinking */
+    text-align: center;
+    background-color: #f7f0f0;
+    border-radius: 100px;
+    box-shadow: 0 10px 50px #8B4513;
+    transition: transform 0.9s ease, box-shadow 0.399s ease;
+    cursor: pointer;
+    display: inline-block; /* Ensure the item size adjusts to the image */
+}
+
+
+.item:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 0px 12px rgba(10, 211, 13, 0.2); /* Stronger shadow on hover */
+}
+
+.item img {
+    width: 450px; /* Make image fill its container */
+    height: 400px; /* Maintain the aspect ratio */
+    border-radius: 22.5%; /* Round the image corners */
+}
+
+
+.item h2 {
+    margin-top: 25px;
+    font-size: 26px;
+    font-family:Noto Serif;
+    color: #9c7767;
+    transition: all 0.3s ease; 
+}
+.item h2:hover {
+    color: #8B4513;  
+    font-size: 25px;  
+}
+
+
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(244, 235, 235);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 50%; /* Round buttons */
+}
+
+.scroll-btn:hover {
+    background: #6a2d11;
+}
+
+.left-btn {
+    left: 100;
+}
+
+.right-btn {
+    position: absolute;
+    right: 9px;
+}
+
+.scroll-container br {
+    display: none; /* Hide unnecessary breaks */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .text-white h1 {
+        font-size: 40px;
+    }
+
+    .scroll-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

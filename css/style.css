@@ -1,0 +1,319 @@
+header{
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #0a0a0a;
+  
+}
+.header_container{
+  width: 950px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #181717;
+}
+.icon_l{
+margin-left: 15px;
+}
+.icon_lI{
+  width: 25px;
+  margin-left: 15px;
+  height: 25px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.search{
+  padding: 5px;
+  background-image: url('/icon/Path\ 11.png');
+  background-size: 17px;
+  background-repeat: no-repeat;
+  background-position: 9px 6px;
+  outline: 0.5px;
+  border: 1px solid rgba(65, 60, 60, 0.295);
+  border-radius: 3px;
+
+}
+.search::placeholder{
+  color: black;
+  padding-left: 25px;
+  font-family: var(--font);
+}
+
+
+.main-container{
+  width: 100%;
+  
+}
+.inner-container{
+  width: 935px;
+  height: 100%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  flex-direction: row;
+  
+}
+
+  .tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: 150px;
+  margin-left: 300px;
+ gap:5px;
+}
+
+
+.tab {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+
+}
+
+.tab:hover {
+  transform: scale(1.1); 
+}
+
+.tab.active-tab {
+  border: 2px solid #fff; 
+}
+
+
+.tab-content {
+  display: none;
+  text-align: center;
+}
+
+
+.tab-content img {
+  max-width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-inline-start: auto;
+  gap: 2px;
+}
+
+.tab-content .images-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2px;
+  margin-left: 250px;
+}
+
+.active-content { 
+  display: block;
+}
+
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #f0f0f0;
+}
+
+  
+.story-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 100px;
+  margin-left: 250px;
+  
+}
+
+.story {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.story-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+.controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev, .next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin:0;
+  padding:0;
+}
+
+.instagram-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  margin: 5px;
+  margin-top: 250px;
+
+}
+
+.post {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 8px;
+}
+
+.post-img {
+  width: 100px;
+  height: 100px;
+
+}
+
+
+.caption {
+  font-size: 5px;
+  color: #333;
+  margin-top: 10px;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #0d0a0a;
+}
+
+.sidebar {
+  height: 100vh; 
+  width: 200px; 
+  background-color: #0d0a0a;
+  color: white;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+}
+
+.sidebar a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #525569; 
+}
+
+.sidebar a i {
+  margin-left: 20px; 
+}
+
+
+.content {
+  margin-left: 250px;  
+  padding: 50px;
+  width: 100%;
+}
+
+
+
+ 
+
+footer {
+  background-color:#0d0a0a;
+  color: #1c40e0;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  left: 200px;
+  bottom: 0;
+  width: 100%;
+}
+
+footer span {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
